@@ -12,7 +12,7 @@ public class AgendaDeContatos{
 
     // Constructor:
     public AgendaDeContatos(){
-        conjunto_de_contatos = new HashSet<>();
+        this.conjunto_de_contatos = new HashSet<>();
     }
 
     // Métodos que manipulam o set:

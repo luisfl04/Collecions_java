@@ -12,7 +12,7 @@ public class ListaDeTarefas{
 
     // Constructor:
     public ListaDeTarefas(){
-        conjunto_de_tarefas = new HashSet<>();
+        this.conjunto_de_tarefas = new HashSet<>();
     }
 
     // Métodos que manipulam o conjunto:
