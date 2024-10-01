@@ -30,11 +30,13 @@ public class Produto implements Comparable<Produto>{
     }
     
     // método padrão de comparação:
+    @Override
     public int compareTo(Produto produto_testado){
         return Double.compare(preco_do_produto, produto_testado.getPrecoDoProduto());
     } 
 
     // 'toString()':
+    @Override
     public String toString(){
         return "Nome do Produto: " + nome_do_produto + 
         " - Código: " + codigo_do_produto + 
@@ -46,9 +48,8 @@ public class Produto implements Comparable<Produto>{
 
 class CompararProdutoPorNome implements Comparator<Produto>{
 
-
-
-
-
-
+    @Override
+    public int compare(Produto primeiro_produto, Produto segundo_produto){
+        return primeiro_produto.getNomeDoProduto().compareToIgnoreCase(segundo_produto.getNomeDoProduto());
+    }    
 }
