@@ -83,24 +83,5 @@ public class ContagemPalavras {
             return palavra_com_mais_frequencia;
         }       
 
-
-
-        public static void main(String[] args) {
-            
-
-            ContagemPalavras palavras = new ContagemPalavras();
-
-            palavras.adicionarPalavra("Celular", 2);
-            palavras.adicionarPalavra("Maria", 3);
-            palavras.adicionarPalavra("Ola", 100);
-
-            palavras.removerPalavra("Celular");
-
-            palavras.exibirContagemPalavras();
         
-            palavras.encontrarPalavraMaisFrequente();
-            
-        }   
-
-
 }
