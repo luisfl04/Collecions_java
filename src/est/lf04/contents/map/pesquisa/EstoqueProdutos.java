@@ -128,15 +128,18 @@ public class EstoqueProdutos {
                     // Variável que irá receber o valor total do produto a cada iteração:
                     double valor_total_do_produto_atual = produto_testado.getPreco_do_produto() * produto_testado.getQuantidade_de_produtos();
 
-
-                    if()
+                    if(valor_total_do_produto_atual > preco_do_maior_produto){
+                        preco_do_maior_produto = valor_total_do_produto_atual;
+                        produto_com_maior_valor_total = produto_testado;
+                    }
                     
                 }
 
-
+                // Imprimindo o produto:
+                System.out.println("Produto de maior valor no estoque:\n" + produto_com_maior_valor_total);
             }
 
+            return produto_com_maior_valor_total;
         }
         
-
 }
