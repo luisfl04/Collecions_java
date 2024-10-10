@@ -49,3 +49,13 @@ class CompararPorPreco implements Comparator<Map.Entry<String, Livro>>{
         return Double.compare(primeiro_livro.getValue().getPreco_do_titulo(), segundo_livro.getValue().getPreco_do_titulo());
     }
 }   
+
+// classe que realiza a comparação por nome do autor:
+class CompararPorNomeDoAutor implements Comparator<Map.Entry<String, Livro>> {
+    @Override
+    public int compare(Map.Entry<String, Livro> primeiro_livro, Map.Entry<String, Livro> segundo_livro){
+        return primeiro_livro.getValue().getAutor_do_titulo().compareToIgnoreCase(segundo_livro.getValue().getAutor_do_titulo());    
+    }   
+
+}
+
